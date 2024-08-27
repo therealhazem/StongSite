@@ -21,24 +21,47 @@
 </head>
 <body>
     <!-- navbar -->
-    <header class="border-b-2 border-myColor">
+    <header class="border-b-2 border-myColor fixed top-0 left-0 w-full z-30 bg-white">
         <nav class="container mx-auto flex justify-between items-center py-2 md:py-3 px-5">
-            <img class="h-8 md:h-10 lg:h-12" src="images/logo.png">
-            <button id="hamMenu"><i class="fa-solid fa-bars text-2xl md:text-3xl lg:text-4xl"></i> </div>
+            <img class="h-8 md:h-10 lg:h-12" src="images/logo.png" alt="Logo">
+            <button id="hamMenu"><i id="icon" class="fa-solid fa-bars text-2xl md:text-3xl lg:text-4xl transition-transform duration-300 ease-in-out"></i></button>
         </nav>
     </header>
     <!-- end navbar-->
 
+<!-- Navbar Dropdown -->
+<div id="Menu" class="bg-myColor w-full h-[calc(100vh-50px)] fixed top-[50px] left-0 z-20 hidden overflow-hidden">
+    <div class="text-white flex flex-col items-center justify-center text-4xl font-bold h-full">
+        <h1 class="hover:text-myColor hover:bg-white w-full text-center p-16 transition-transform transform hover:translate-y-[-10px] cursor-pointer" onclick="scrollToSection('Services')">
+            Services
+        </h1>
+        <h1 class="hover:text-myColor hover:bg-white w-full text-center p-16 transition-transform transform hover:translate-y-[-10px] cursor-pointer" onclick="scrollToSection('Portfolio')">
+            Portfolio
+        </h1>
+        <h1 class="hover:text-myColor hover:bg-white w-full text-center p-16 transition-transform transform hover:translate-y-[-10px] cursor-pointer" onclick="scrollToSection('About')">
+            About
+        </h1>
+        <h1 class="hover:text-myColor hover:bg-white w-full text-center p-16 transition-transform transform hover:translate-y-[-10px] cursor-pointer" onclick="scrollToSection('Contact')">
+            Contact
+        </h1>
+    </div>
+</div>
+<!-- End Navbar Dropdown -->
+
     <!-- hero section -->
-    <div class="relative">
+    <div class="relative mt-[50px]">
         <div class="absolute inset-0 flex flex-col z-10 bottom-0 items-center justify-center pb-[14%]">
             <h1 class="text-myColor font-black font-koulen text-4xl md:text-6xl lg:text-[100px]">HELLO THERE!</h1>
             <h2 class="font-kumbh font-extralight text-blackColor text-center py-1 text-sm md:text-xl md:py-4 lg:text-2xl">We are Super - Super Creative & Minimal<br>Agency Web Template</h2>
         </div>
         <div class="z-0">
-        <img src="images/Background.jpg" class="object-cover max-w-lvh">
+            <img src="images/Background.jpg" class="object-cover max-w-lvh" alt="Background Image">
         </div>
     </div>
     <!-- end hero section -->
+
+
+    <!-- Include your JavaScript file -->
+    <script src="jsfile.js"></script>
 </body>
 </html>
