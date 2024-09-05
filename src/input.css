@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+@layer components {
+    .cardStyle {
+        @apply w-full aspect-[4/3] shadow-lg rounded-3xl bg-white flex flex-col items-center justify-center text-center px-10 py-4 gap-3 md:gap-5 transition-transform transform duration-300 hover:shadow-2xl hover:translate-y-[-5px];
+    }
+    .cardStyle2 {
+        @apply w-full aspect-[4/4] shadow-xl rounded-3xl bg-grayColor flex flex-col justify-start items-center gap-3 md:gap-4 transition-transform transform duration-300 hover:shadow-2xl hover:translate-y-[-5px];
+    }
+}
